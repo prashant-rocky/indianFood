@@ -1,5 +1,7 @@
 import '../../assets/style.css'
 import logo from '../../assets/logoimg.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocation, faMailBulk, faPhone } from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
     return(
         <footer>
@@ -19,9 +21,9 @@ const Footer = () => {
                      </div>
                      <div className="col-md-3 text-white">
                         <h5 className='text-primary'>Contact Info</h5>
-                        <p>p3532490@gmail.com</p>
-                        <p>+91 9724863041</p>
-                        <p> dearka mor, new delhi</p>
+                        <p>  <FontAwesomeIcon icon={faMailBulk}/> p3532490@gmail.com</p>
+                        <p> <FontAwesomeIcon icon={faPhone}/> +91 9724863041</p>
+                        <p>  <FontAwesomeIcon icon={faLocation}/> dwarka mor, new delhi</p>
                      </div>
                      <div className="col-md-3">
                         <h5 className='text-primary'>Legal</h5>

@@ -6,8 +6,8 @@ import { biryanis, burgers, pizzas, thalis } from '../../utils/data';
 import PizzaCard from '../pizzacard';
 
 
-const Product = () => {
-  const [cart, setCart] = useState([]);
+const Product = ({ cart, setCart }) => {
+  // const [cart, setCart] = useState([]);
 
   const addToCart = (item) => {
     const exists = cart.find(cartItem => cartItem.id === item.id);
