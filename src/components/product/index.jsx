@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faCartShopping, faClock } from "@fortawesome/free-solid-svg-icons";
@@ -7,7 +7,7 @@ import PizzaCard from '../pizzacard';
 
 
 const Product = ({ cart, setCart }) => {
-  // const [cart, setCart] = useState([]);
+  
 
   const addToCart = (item) => {
     const exists = cart.find(cartItem => cartItem.id === item.id);
